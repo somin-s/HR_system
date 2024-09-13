@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{765C4196-04E8-4A96-B8D8-20AF702A7718}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrightHRSystem</RootNamespace>
+    <AssemblyName>BrightHRSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>C:\dll\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>C:\dll\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelCreator.2, Version=5.0.804.5912, Culture=neutral, PublicKeyToken=ced4a81bec0a43ef, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\XlsCrt5\Bin2005\ExcelCreator.2.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelCreator.XlsCrt.2, Version=5.0.804.5912, Culture=neutral, PublicKeyToken=c7202a96d9a84e8f, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\XlsCrt5\Bin2005\ExcelCreator.XlsCrt.2.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelCreator.XlsPDF.2, Version=5.0.804.5912, Culture=neutral, PublicKeyToken=e4c513f313a6890d, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\XlsCrt5\Bin2005\ExcelCreator.XlsPDF.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Obout.Ajax.UI">
+      <HintPath>C:\dll\Obout.Ajax.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_EasyMenu_Pro">
+      <HintPath>C:\dll\obout_EasyMenu_Pro.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Acceptance.aspx" />
+    <Content Include="Org_BIG.aspx" />
+    <Content Include="Org_SMALL.aspx" />
+    <Content Include="images\BackImage.png" />
+    <Content Include="images\Org.png" />
+    <Content Include="images\Salary.png" />
+    <Content Include="images\Setting.png" />
+    <Content Include="images\staff.png" />
+    <Content Include="images\WorkingRecord.jpg" />
+    <Content Include="js\common.js" />
+    <Content Include="Salary_SpecialAllowance.aspx" />
+    <Content Include="Setting_System.aspx" />
+    <Content Include="WorkingRecord_Acceptance.aspx" />
+    <Content Include="Salary2.aspx" />
+    <Content Include="css\EasyMenuStyles\CustomeStyle\margin.gif" />
+    <Content Include="css\EasyMenuStyles\CustomeStyle\mid.gif" />
+    <Content Include="css\EasyMenuStyles\CustomeStyle\mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\CustomeStyle\style.css" />
+    <Content Include="css\EasyMenuStyles\CustomeStyle\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\CustomeStyle\submenu_parent.gif" />
+    <Content Include="css\EasyMenuStyles\CustomeStyle\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\CustomeStyle\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\Futura\bg_menuItem.gif" />
+    <Content Include="css\EasyMenuStyles\Futura\bg_menuItemOver.gif" />
+    <Content Include="css\EasyMenuStyles\Futura\bg_separator.gif" />
+    <Content Include="css\EasyMenuStyles\Futura\style.css" />
+    <Content Include="css\EasyMenuStyles\Futura\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Futura\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal1\margin.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal1\mid.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal1\mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal1\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal1\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal1\submenu_parent.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal1\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal1\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal2\diagonal_bw.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal2\diagonal_wb.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal2\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal2\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal2\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal3\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal3\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal3\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal4\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal4\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal5\bg.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal5\bg_a.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal5\gag.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal5\sep.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal5\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal5\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal5\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal5\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\arrow.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\arrow_a.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\bg.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\bg_a.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\gag.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\gagf.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\gagl.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\gagl_a.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\il.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\ir.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\sep.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal6\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal7\bg.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal7\bg_a.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal7\gagf.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal7\gagl.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal7\il.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal7\sep.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal7\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal7\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal7\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal7\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal8\bg.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal8\bg_a.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal8\gagf.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal8\gagl.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal8\sep.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal8\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal8\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal8\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal8\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal8\s_bg_a.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_1\bg_em_1.jpg" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_1\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_1\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_2\bg_em_2.JPG" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_2\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_2\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_3\bg_em_3.JPG" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_3\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_3\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_4\bg_em_4.JPG" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_4\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_4\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_5\bg_em_5.JPG" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_5\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\le_5\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontal9\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontalrtl\margin.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontalrtl\mid.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontalrtl\mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontalrtl\style.css" />
+    <Content Include="css\EasyMenuStyles\Horizontalrtl\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontalrtl\submenu_parent.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontalrtl\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Horizontalrtl\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\MSDN2\style.css" />
+    <Content Include="css\EasyMenuStyles\MSDN\style.css" />
+    <Content Include="css\EasyMenuStyles\Multiple\bg_separator_5.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\margin.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\mid.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\style.css" />
+    <Content Include="css\EasyMenuStyles\Multiple\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\submenu_4.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\submenu_5.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\submenu_parent.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\submenu_white_4.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\submenu_white_5.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\Multiple\s_bg_4.gif" />
+    <Content Include="css\EasyMenuStyles\RightToLeft\style.css" />
+    <Content Include="css\EasyMenuStyles\RightToLeft\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\style.css" />
+    <Content Include="css\EasyMenuStyles\Style10\style.css" />
+    <Content Include="css\EasyMenuStyles\Style10\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Style10\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Style13\style.css" />
+    <Content Include="css\EasyMenuStyles\Style13\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Style13\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Style1\style.css" />
+    <Content Include="css\EasyMenuStyles\Style1\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Style1\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\style1_multiple_menus\margin.gif" />
+    <Content Include="css\EasyMenuStyles\style1_multiple_menus\mid.gif" />
+    <Content Include="css\EasyMenuStyles\style1_multiple_menus\mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\style1_multiple_menus\style.css" />
+    <Content Include="css\EasyMenuStyles\style1_multiple_menus\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\style1_multiple_menus\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\style1_multiple_menus\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\Style2\style.css" />
+    <Content Include="css\EasyMenuStyles\Style2\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Style2\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\style2_multiple_menus\margin.gif" />
+    <Content Include="css\EasyMenuStyles\style2_multiple_menus\mid.gif" />
+    <Content Include="css\EasyMenuStyles\style2_multiple_menus\mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\style2_multiple_menus\style.css" />
+    <Content Include="css\EasyMenuStyles\style2_multiple_menus\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\style2_multiple_menus\submenu_parent.gif" />
+    <Content Include="css\EasyMenuStyles\style2_multiple_menus\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\style2_multiple_menus\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\Style3\style.css" />
+    <Content Include="css\EasyMenuStyles\Style3\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Style3\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Style9\style.css" />
+    <Content Include="css\EasyMenuStyles\Style9\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Style9\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip10\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip10\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip10\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip10\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip10\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip10\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip10\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip11\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip11\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip11\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip11\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip11\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip11\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip11\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip12\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip12\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip12\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip12\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip12\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip12\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip12\separator.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip12\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip1\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip1\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip1\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip1\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip1\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip1\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip1\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip1\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip2\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip2\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip2\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip2\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip2\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip2\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip2\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip3\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip3\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip3\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip3\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip3\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip3\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip3\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip4\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip4\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip4\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip4\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip4\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip4\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip4\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip5\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip5\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip5\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip5\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip5\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip5\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip5\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip6\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip6\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip6\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip6\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip6\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip6\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip6\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip7\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip7\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip7\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip7\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip7\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip7\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip7\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip8\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip8\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip8\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip8\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip8\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip8\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip8\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip9\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip9\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip9\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip9\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip9\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip9\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStrip9\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStrip9\Untitled-1 copy.gif" />
+    <Content Include="css\EasyMenuStyles\TabStripHorizontal\roundcorner_left.jpg" />
+    <Content Include="css\EasyMenuStyles\TabStripHorizontal\roundcorner_left_over.jpg" />
+    <Content Include="css\EasyMenuStyles\TabStripHorizontal\roundcorner_mid.jpg" />
+    <Content Include="css\EasyMenuStyles\TabStripHorizontal\roundcorner_mid_over.jpg" />
+    <Content Include="css\EasyMenuStyles\TabStripHorizontal\roundcorner_right.jpg" />
+    <Content Include="css\EasyMenuStyles\TabStripHorizontal\roundcorner_right_over.jpg" />
+    <Content Include="css\EasyMenuStyles\TabStripHorizontal\style.css" />
+    <Content Include="css\EasyMenuStyles\TabStripHorizontal\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\TabStripYahoo\roundcorner_left.gif" />
+    <Content Include="css\EasyMenuStyles\TabStripYahoo\roundcorner_left_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStripYahoo\roundcorner_mid.gif" />
+    <Content Include="css\EasyMenuStyles\TabStripYahoo\roundcorner_mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStripYahoo\roundcorner_right.gif" />
+    <Content Include="css\EasyMenuStyles\TabStripYahoo\roundcorner_right_over.gif" />
+    <Content Include="css\EasyMenuStyles\TabStripYahoo\style.css" />
+    <Content Include="css\EasyMenuStyles\Transparent\bg.gif" />
+    <Content Include="css\EasyMenuStyles\Transparent\bg_a.gif" />
+    <Content Include="css\EasyMenuStyles\Transparent\gag.gif" />
+    <Content Include="css\EasyMenuStyles\Transparent\sep.gif" />
+    <Content Include="css\EasyMenuStyles\Transparent\style.css" />
+    <Content Include="css\EasyMenuStyles\Transparent\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Transparent\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Transparent\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\TSH_Horizontal\margin.gif" />
+    <Content Include="css\EasyMenuStyles\TSH_Horizontal\mid.gif" />
+    <Content Include="css\EasyMenuStyles\TSH_Horizontal\mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\TSH_Horizontal\style.css" />
+    <Content Include="css\EasyMenuStyles\TSH_Horizontal\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\TSH_Horizontal\submenu_parent.gif" />
+    <Content Include="css\EasyMenuStyles\TSH_Horizontal\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\TSH_Horizontal\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\TSH_TabStrip\roundcorner_left.jpg" />
+    <Content Include="css\EasyMenuStyles\TSH_TabStrip\roundcorner_left_over.jpg" />
+    <Content Include="css\EasyMenuStyles\TSH_TabStrip\roundcorner_mid.jpg" />
+    <Content Include="css\EasyMenuStyles\TSH_TabStrip\roundcorner_mid_over.jpg" />
+    <Content Include="css\EasyMenuStyles\TSH_TabStrip\roundcorner_right.jpg" />
+    <Content Include="css\EasyMenuStyles\TSH_TabStrip\roundcorner_right_over.jpg" />
+    <Content Include="css\EasyMenuStyles\TSH_TabStrip\style.css" />
+    <Content Include="css\EasyMenuStyles\TSH_TabStrip\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Vertical1\style.css" />
+    <Content Include="css\EasyMenuStyles\Vertical1\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Verticalrtl\style.css" />
+    <Content Include="css\EasyMenuStyles\Verticalrtl\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Vertical_Multiple\margin.gif" />
+    <Content Include="css\EasyMenuStyles\Vertical_Multiple\mid.gif" />
+    <Content Include="css\EasyMenuStyles\Vertical_Multiple\mid_over.gif" />
+    <Content Include="css\EasyMenuStyles\Vertical_Multiple\style.css" />
+    <Content Include="css\EasyMenuStyles\Vertical_Multiple\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Vertical_Multiple\submenu_parent.gif" />
+    <Content Include="css\EasyMenuStyles\Vertical_Multiple\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Vertical_Multiple\s_bg.gif" />
+    <Content Include="css\EasyMenuStyles\Vsnet\bg_menu.gif" />
+    <Content Include="css\EasyMenuStyles\Vsnet\bg_separator.gif" />
+    <Content Include="css\EasyMenuStyles\Vsnet\style.css" />
+    <Content Include="css\EasyMenuStyles\Vsnet\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Vsnet\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\WindowsXP\bg_separator.gif" />
+    <Content Include="css\EasyMenuStyles\WindowsXP\style.css" />
+    <Content Include="css\EasyMenuStyles\WindowsXP\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\WindowsXP\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\windowsXP_Window\bg_separator.gif" />
+    <Content Include="css\EasyMenuStyles\windowsXP_Window\style.css" />
+    <Content Include="css\EasyMenuStyles\windowsXP_Window\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\windowsXP_Window\submenu_white.gif" />
+    <Content Include="css\EasyMenuStyles\Windows\bg_separator.gif" />
+    <Content Include="css\EasyMenuStyles\Windows\style.css" />
+    <Content Include="css\EasyMenuStyles\Windows\submenu.gif" />
+    <Content Include="css\EasyMenuStyles\Windows\submenu_white.gif" />
+    <Content Include="Salary_Detail.aspx" />
+    <Content Include="Salary.aspx" />
+    <Content Include="css\Style.css" />
+    <Content Include="images\detail1.jpg" />
+    <Content Include="images\detail2.jpg" />
+    <Content Include="images\search.jpg" />
+    <Content Include="Default.aspx">
+      <BrowseToURL>~/Default.aspx</BrowseToURL>
+    </Content>
+    <Content Include="images\header.png" />
+    <Content Include="Menu.aspx" />
+    <Content Include="Org.aspx" />
+    <Content Include="WorkingRecord_Import.aspx" />
+    <Content Include="WorkingRecord_Year.aspx" />
+    <Content Include="Setting_Calendar.aspx" />
+    <Content Include="Setting_Department.aspx" />
+    <Content Include="Setting_Division.aspx" />
+    <Content Include="Setting_Employee_type.aspx" />
+    <Content Include="Setting_Job.aspx" />
+    <Content Include="Setting_License.aspx" />
+    <Content Include="Setting_Position.aspx" />
+    <Content Include="Setting_Section.aspx" />
+    <Content Include="Employee.aspx" />
+    <Content Include="Employee_Detail.aspx" />
+    <Content Include="Employee_Edit.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WorkingRecord.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceptance.aspx.cs">
+      <DependentUpon>Acceptance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acceptance.aspx.designer.cs">
+      <DependentUpon>Acceptance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="com\ComFunction.cs" />
+    <Compile Include="Org_BIG.aspx.cs">
+      <DependentUpon>Org_BIG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Org_BIG.aspx.designer.cs">
+      <DependentUpon>Org_BIG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Org_SMALL.aspx.cs">
+      <DependentUpon>Org_SMALL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Org_SMALL.aspx.designer.cs">
+      <DependentUpon>Org_SMALL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salary_SpecialAllowance.aspx.cs">
+      <DependentUpon>Salary_SpecialAllowance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salary_SpecialAllowance.aspx.designer.cs">
+      <DependentUpon>Salary_SpecialAllowance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_System.aspx.cs">
+      <DependentUpon>Setting_System.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting_System.aspx.designer.cs">
+      <DependentUpon>Setting_System.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingRecord_Acceptance.aspx.cs">
+      <DependentUpon>WorkingRecord_Acceptance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkingRecord_Acceptance.aspx.designer.cs">
+      <DependentUpon>WorkingRecord_Acceptance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salary2.aspx.cs">
+      <DependentUpon>Salary2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salary2.aspx.designer.cs">
+      <DependentUpon>Salary2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salary_Detail.aspx.cs">
+      <DependentUpon>Salary_Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salary_Detail.aspx.designer.cs">
+      <DependentUpon>Salary_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Salary.aspx.cs">
+      <DependentUpon>Salary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salary.aspx.designer.cs">
+      <DependentUpon>Salary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Org.aspx.cs">
+      <DependentUpon>Org.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Org.aspx.designer.cs">
+      <DependentUpon>Org.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_Calendar.aspx.cs">
+      <DependentUpon>Setting_Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting_Calendar.aspx.designer.cs">
+      <DependentUpon>Setting_Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_Department.aspx.cs">
+      <DependentUpon>Setting_Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting_Department.aspx.designer.cs">
+      <DependentUpon>Setting_Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_Division.aspx.cs">
+      <DependentUpon>Setting_Division.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting_Division.aspx.designer.cs">
+      <DependentUpon>Setting_Division.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_Employee_type.aspx.cs">
+      <DependentUpon>Setting_Employee_type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting_Employee_type.aspx.designer.cs">
+      <DependentUpon>Setting_Employee_type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_Job.aspx.cs">
+      <DependentUpon>Setting_Job.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting_Job.aspx.designer.cs">
+      <DependentUpon>Setting_Job.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_License.aspx.cs">
+      <DependentUpon>Setting_License.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting_License.aspx.designer.cs">
+      <DependentUpon>Setting_License.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_Position.aspx.cs">
+      <DependentUpon>Setting_Position.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting_Position.aspx.designer.cs">
+      <DependentUpon>Setting_Position.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_Section.aspx.cs">
+      <DependentUpon>Setting_Section.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting_Section.aspx.designer.cs">
+      <DependentUpon>Setting_Section.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.aspx.cs">
+      <DependentUpon>Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee.aspx.designer.cs">
+      <DependentUpon>Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Detail.aspx.cs">
+      <DependentUpon>Employee_Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee_Detail.aspx.designer.cs">
+      <DependentUpon>Employee_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Edit.aspx.cs">
+      <DependentUpon>Employee_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee_Edit.aspx.designer.cs">
+      <DependentUpon>Employee_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingRecord.aspx.cs">
+      <DependentUpon>WorkingRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkingRecord.aspx.designer.cs">
+      <DependentUpon>WorkingRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingRecord_Import.aspx.cs">
+      <DependentUpon>WorkingRecord_Import.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkingRecord_Import.aspx.designer.cs">
+      <DependentUpon>WorkingRecord_Import.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingRecord_Year.aspx.cs">
+      <DependentUpon>WorkingRecord_Year.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkingRecord_Year.aspx.designer.cs">
+      <DependentUpon>WorkingRecord_Year.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataClasses.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\EasyMenuStyles\CustomeStyle\Thumbs.db" />
+    <Content Include="css\EasyMenuStyles\Thumbs.db" />
+    <None Include="DataClasses.dbml.layout">
+      <DependentUpon>DataClasses.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57250</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

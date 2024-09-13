@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HR_002" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=WIN-KTMDK5ND1VK\SQLEXPRESS;Initial Catalog=HR_002;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="HRConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TB_M_DEPARTMENT" Member="TB_M_DEPARTMENTs">
+    <Type Name="TB_M_DEPARTMENT">
+      <Column Name="DEPARTMENT_CD" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DETAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_WORKINGREPORT_H" Member="TB_R_WORKINGREPORT_Hs">
+    <Type Name="TB_R_WORKINGREPORT_H">
+      <Column Name="seqID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="USER_ID" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="YEAH" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MONTH" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="WORKING_PLACE" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_DIVISION" Member="TB_M_DIVISIONs">
+    <Type Name="TB_M_DIVISION">
+      <Column Name="DIVISION_CD" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DETAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_EMPLOYEE_TYPE" Member="TB_M_EMPLOYEE_TYPEs">
+    <Type Name="TB_M_EMPLOYEE_TYPE">
+      <Column Name="EMPLOYEE_TYPE" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DETAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_HOLIDAY" Member="TB_M_HOLIDAYs">
+    <Type Name="TB_M_HOLIDAY">
+      <Column Name="seqID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DATE_HOLIDAY" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_JOB" Member="TB_M_JOBs">
+    <Type Name="TB_M_JOB">
+      <Column Name="JOB_CD" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DETAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_LANGUAGE" Member="TB_M_LANGUAGEs">
+    <Type Name="TB_M_LANGUAGE">
+      <Column Name="Page" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="Control" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="Text_JP" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+      <Column Name="Text_TH" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+      <Column Name="Count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TabIndex" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_LICENSE" Member="TB_M_LICENSEs">
+    <Type Name="TB_M_LICENSE">
+      <Column Name="LICENSE_CD" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DETAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_MENU" Member="TB_M_MENUs">
+    <Type Name="TB_M_MENU">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InnerHtml_EN" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="InnerHtml_JP" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="InnerHtml_TH" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Url" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_MESSAGE" Member="TB_M_MESSAGEs">
+    <Type Name="TB_M_MESSAGE">
+      <Column Name="ID" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="MESSAGE_EN" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="MESSAGE_JP" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="MESSAGE_TH" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_ORG" Member="TB_M_ORGs">
+    <Type Name="TB_M_ORG">
+      <Column Name="DATA1" Type="System.String" DbType="NChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DATA2" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="DATA3" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="DATA4" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="DATA5" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="DATA6" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="DATA7" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="DATA8" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_POSITION" Member="TB_M_POSITIONs">
+    <Type Name="TB_M_POSITION">
+      <Column Name="POSITION_CD" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DETAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_SECTION" Member="TB_M_SECTIONs">
+    <Type Name="TB_M_SECTION">
+      <Column Name="SECTION_CD" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DETAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_SETTING" Member="TB_M_SETTINGs">
+    <Type Name="TB_M_SETTING">
+      <Column Name="ITEM" Type="System.String" DbType="NChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[FUNCTION]" Member="FUNCTION" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="VALUE" Type="System.String" DbType="NChar(120)" CanBeNull="true" />
+      <Column Name="SCREEN" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_SLIPTYPE" Member="TB_M_SLIPTYPEs">
+    <Type Name="TB_M_SLIPTYPE">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SLIP_NAME" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="FILE_NAME" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_M_TIME" Member="TB_M_TIMEs">
+    <Type Name="TB_M_TIME">
+      <Column Name="seqID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TIME_DATA" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="TIME_TYPE1" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="TIME_TYPE2" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="TIME_TYPE3" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="TIME_TYPE4" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_EDUCATION" Member="TB_R_EDUCATIONs">
+    <Type Name="TB_R_EDUCATION">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="EDUCATION" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SCHOOL_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SUBJECT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GRADUATION_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_FAMILY" Member="TB_R_FAMILies">
+    <Type Name="TB_R_FAMILY">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="RELATIONSHIP" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="BIRTHDAY" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LIVING_TOGETHER" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="PROVIDE" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="EDUCATION" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_LICENSE" Member="TB_R_LICENSEs">
+    <Type Name="TB_R_LICENSE">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="LICENSE_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="REGISTRY_NUMBER" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ACQUISITION_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="REMARK" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_MENU" Member="TB_R_MENUs">
+    <Type Name="TB_R_MENU">
+      <Column Name="seqID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InnerHtml" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Url" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserCD" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_PAYROLL_D" Member="TB_R_PAYROLL_Ds">
+    <Type Name="TB_R_PAYROLL_D">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HEADER_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_ID" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="WORKING_DAYS" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="REAL_WORK_DAYS" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="ABCENSE_DAYS" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="PAID_HOLIDAY_DAYS" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="BUSINESS_TRIP" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="WORKING_TIMES" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="REAL_WORKING_TIMES" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="NORMALOTTIME" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="HOLIDAYWORKTIME" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="HOLIDAYOTTIME" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="REMAIN_PAID_HOLIDAY" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="USED_PAID_HOLIDAY" Type="System.Decimal" DbType="Decimal(5,1)" CanBeNull="true" />
+      <Column Name="BASIC_SALARY" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="UNIT_PRICE" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="OT_PRICE" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="HOLIDAY_WORK_PRICE" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="HOLIDAY_OT_PRICE" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="BASIC_ALLOWANCE" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPECIAL_ALLOWANCE" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="HANDOVER" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TRANSFER" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TRANSPOTATION" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="INCOME_TOTAL" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SOCIAL_SECURITY" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="INCOME_TAX" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="PROV_EMP" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="PROV_COMP" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SALARY_PAYMENT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CONDITION" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="INPUT_F" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="PRINT_F" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="PAID_F" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="YEARS_FIXED" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="YEARS_EXPECTATION" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="INCOME_EMPLOYMENT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPOUSE_ALLOWANCE" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="CHILD_ALLOWANCE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EDUCATION_ALLOWANCE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PARENTS_ALLOWANCE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LIFE_INSURANCE" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="APPROVED_PROVIDENT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="LONG_TERM_EQUITY" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="HOME_MORTGAGE" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SOCIAL" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CHARITABLE" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_PAYROLL_D2" Member="TB_R_PAYROLL_D2s">
+    <Type Name="TB_R_PAYROLL_D2">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="D1_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SPECIAL1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPECIAL2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPECIAL3" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPECIAL4" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPECIAL5" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPECIAL6" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPECIAL7" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPECIAL8" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPECIAL9" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SPECIAL10" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_PAYROLL_H" Member="TB_R_PAYROLL_Hs">
+    <Type Name="TB_R_PAYROLL_H">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="YEAR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MONTH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BONUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_REVISION" Member="TB_R_REVISIONs">
+    <Type Name="TB_R_REVISION">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DETAIL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BEFORE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="AFTER" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_SALARY" Member="TB_R_SALARies">
+    <Type Name="TB_R_SALARY">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="[DESC]" Member="DESC" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="REMARK" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="AMOUNT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_TRAINING" Member="TB_R_TRAININGs">
+    <Type Name="TB_R_TRAINING">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DETAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="HOST" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_USER" Member="TB_R_USERs">
+    <Type Name="TB_R_USER">
+      <Column Name="ID" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LOCALNAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SHORTNAME" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="DEPARTMENT_CD" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="DIVISION_CD" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="SECTION_CD" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="POSITION_CD" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="JOB_CD" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="EMPLOYEE_TYPE" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CURRENT_PASSWORD" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="EXPIRE_PASSWORD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SEX" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="TERMINATION_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BIRTHDAY" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ENTERINGDAY" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ADDRESS1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ADDRESS2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="NChar(12)" CanBeNull="true" />
+      <Column Name="MOBILE" Type="System.String" DbType="NChar(12)" CanBeNull="true" />
+      <Column Name="PARENTS" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="BANK_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ACCOUNT_NO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="APPROVER1" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="APPROVER2" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="APPROVER3" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="IMAGE" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="AUTH1" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="AUTH2" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="AUTH3" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="AUTH4" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="AUTH5" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="AUTH6" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="AUTH7" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="AUTH8" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="AUTH9" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="LANG" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_WORK_EXPERIENCE" Member="TB_R_WORK_EXPERIENCEs">
+    <Type Name="TB_R_WORK_EXPERIENCE">
+      <Column Name="SEQ_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DETAIL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_R_WORKINGREPORT_D" Member="TB_R_WORKINGREPORT_Ds">
+    <Type Name="TB_R_WORKINGREPORT_D">
+      <Column Name="seqID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HEADER_ID" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="DAY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WEEK" Type="System.String" DbType="NChar(3)" CanBeNull="true" />
+      <Column Name="ATT1" Type="System.String" DbType="NChar(4)" CanBeNull="true" />
+      <Column Name="ATT2" Type="System.String" DbType="NChar(4)" CanBeNull="true" />
+      <Column Name="WORKING_PLACE" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="APPLY_STARTING" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="APPLY_LEAVING" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="DATA_STARTING" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="DATA_LEAVING" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="OVERTIME_STARTING" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="OVERTIME_LEAVING" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="WORKING_H_NORMAL" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="WORKING_H_OT" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="WEEKEND_H_NORMAL" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="WEEKEND_H_OT" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="REST1" Type="System.String" DbType="NChar(4)" CanBeNull="true" />
+      <Column Name="TOTAL" Type="System.String" DbType="NChar(5)" CanBeNull="true" />
+      <Column Name="DETAIL" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="TOKEN1" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="TOKEN2" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="TOKEN3" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="APPROVER1" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="APPROVER2" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="APPROVER3" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="APPROVE_DATE1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVE_DATE2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVE_DATE3" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVE_COMMENT1" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="APPROVE_COMMENT2" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="APPROVE_COMMENT3" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
